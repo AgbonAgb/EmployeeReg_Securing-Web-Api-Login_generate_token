@@ -197,5 +197,10 @@ namespace ApplicationCore.Services.Repository
 
             return RS;
         }
+
+        public Task<UserRegistrationDto> getUser(string Id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

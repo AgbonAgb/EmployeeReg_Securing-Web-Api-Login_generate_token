@@ -12,6 +12,7 @@ namespace ApplicationCore.Services.Interface
     {
         Task<UserRegistrationResponse> RegisterUser(UserRegistrationDto users);
         Task<IEnumerable<UserRegistrationDto>> getAllUsers();
+        Task<UserRegistrationDto> getUser(string Id);
         Task<LoginResponse> Authenticate(LoginDto LoginDetails);
 
 

@@ -55,9 +55,9 @@ namespace API.Controllers
                 
         }
         [HttpGet("getUser")]
-        public async Task<IActionResult> getUser()
+        public async Task<IActionResult> getUser(string id)
         {
-            //var users = await _authenRepository.getAllUsers();
+            var users = await _authenRepository.getUser(id);
             return Ok();
 
         }
