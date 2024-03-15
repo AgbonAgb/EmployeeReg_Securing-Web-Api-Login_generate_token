@@ -54,7 +54,13 @@ namespace API.Controllers
             return Ok(users);
                 
         }
+        [HttpGet("getUser")]
+        public async Task<IActionResult> getUser()
+        {
+            //var users = await _authenRepository.getAllUsers();
+            return Ok();
 
+        }
 
         [HttpPost("AuthenticateUser")]
         public async Task<IActionResult> LoginUser(LoginDto logindto)
